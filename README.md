@@ -15,7 +15,7 @@ v3 of `InfluxDB`.
 
 ## Credit
 
-The hyper-mike dashboard for hyper-v is inspired by but not based on the hyper-v dashboard written in 2018, by user [allengood](https://grafana.com/orgs/allangood).
+The hyper-mike dashboard for hyper-v is inspired by but not based on the hyper-v dashboard written in 2018, by user [allangood](https://grafana.com/orgs/allangood).
 
 [https://grafana.com/grafana/dashboards/2618-hyper-v-metrics/](https://grafana.com/grafana/dashboards/2618-hyper-v-metrics/)
 
