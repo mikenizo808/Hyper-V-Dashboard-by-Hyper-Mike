@@ -1,5 +1,5 @@
 # Hyper-V-Dashboard-by-Hyper-Mike
-An example Grafana Dashboard for Hyper-V. This requires that the open source telegraf agent (by InfluxData) be installed on the machine to monitor.
+An example Grafana Dashboard for Hyper-V. This requires that the open source telegraf agent (by InfluxData) be installed on the machine to monitor. If you do not have `telegraf` yet, we guide you through installing it. Also, official vendor links for each step will be provided as well, such as for installing `Grafana` and `InfluxDB`.
 
 ## Example dashboard
 
@@ -80,7 +80,7 @@ You can install grafana on many plaforms. This is the main page to get started.
     https://grafana.com/docs/grafana/latest/setup-grafana/start-restart-grafana/
 
     ## Open a browser to some local or remote address
-    https://127.0.01:3000
+    https://127.0.0.1:3000
 
     ## Review the user interface
     ##
