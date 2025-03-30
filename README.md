@@ -79,6 +79,13 @@ You can install grafana on many plaforms. This is the main page to get started.
     ## Start the grafana service
     https://grafana.com/docs/grafana/latest/setup-grafana/start-restart-grafana/
 
+    ## Open a browser to some local or remote address
+    https://127.0.01:3000
+
+    ## Review the user interface
+    ##
+    ## You will not have any data yet. In a later step, we add an InfluxDB "Connection" for your default datasource.
+
 
 ## Install `InfluxDB 3 Core (beta)`
 
@@ -133,18 +140,45 @@ After making changes to configurations for `grafana` or `telegraf`, be sure to s
 
 > Tip: You can check your success using `telegraf -test` (that is one dash).
 
+## Add a default datasource for `grafana`
+
+Login to grafana using a browser and click on `Connections` in the left panel.
+Then select `InfluxDB` for the datasource. Enter the relevant information and
+then click test datasource.
+
+## Review your datasources
+
+After adding a datasource, you can go back and review it if desired.
+However, you must expand the `Connections` drop-down to reveal the
+sub-menu option called `Data sources`.
+
+> Note: You can also click `Administration` and then click the provided link for `Connections`.
+
+## Troubleshooting datasources
+
+If you did not create a database in `InfluxDB`, then do that now and try again.
+For example, you can use the `mydb` you created if following the official instructions
+for `InfluxDB 3 Core (beta)`. If you want a full walk-through with more examples,
+see my guide `Hyper Mike on InfluxDB 3 Core on Ubuntu 24.04.md` located in the repo
+[https://github.com/mikenizo808/minimalist-oss-configurations](https://github.com/mikenizo808/minimalist-oss-configurations)
+
+Note that `InfluxDB` should be running when you test your access from `Grafana`.
+
 ## Grafana default dashboard
+
+If you have `Telegraf` writing stats to `InfluxDB`, and your default datasource setup in `Grafana`,
+then we can proceed to adding and creating "dashboards" now.
 
 Login to your `grafana` instance (i.e. `https://someaddress:3000`).
 Then, navigate to `Dashboards > New > Import`.
 Enter in the dashboard ID `928` to play with the very elegant official dashboard from the `grafana labs` team.
 
-Have a look around, and understand that the default dashboard has a lot of metrics that are Linux only.
-So Windows servers may show errors when viewing those metrics.
+Have a look around, and understand that the default dashboard has a lot of metrics that are `Linux` only.
+So `Windows` servers may show errors when viewing those metrics.
 
 ## The hyper mike dashboards
 
-My dashboards are just a customized version of the above. Then I added support for all of the Windows metrics that do not show on the default dashboards, and in this case some metrics about hyper-v.
+My dashboards are just a customized version of the above. Then I added support for all of the `Windows` metrics that do not show on the default dashboards, and in this case some metrics about hyper-v.
 
 The hyper mike dashboard is windows-aware. This assumes you are collecting the proper stats with `telegraf` or similar.
 
