@@ -79,18 +79,18 @@ You can install grafana on many plaforms. This is the main page to get started.
 
 ## Install `InfluxDB 3 Core (beta)`
 
-For `Ubuntu 24.04` the only requirement before installing is `curl`, so `sudo apt install curl` and you are set.
+For `Ubuntu 24.04` the only requirement before installing is `curl`, so simply `sudo apt install curl` and then follow the vendor instructions from the `InfluxData` team.
 
-    https://docs.influxdata.com/influxdb3/core/install/
+    [https://docs.influxdata.com/influxdb3/core/install/[(https://docs.influxdata.com/influxdb3/core/install/)
 
 
 ## Download `telegraf`
 
-Simply navigate to [https://influxdata.com/downloads](https://influxdata.com/downloads).
+Navigate to [https://influxdata.com/downloads](https://influxdata.com/downloads).
 
 ## Install `telegraf`
 
-Follow the provided instructions to install on your desired platform.
+Follow the vendor-provided instructions to install on your desired platform.
 
 ## backup your default telegraf configuration
 
