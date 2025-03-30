@@ -27,6 +27,15 @@ of RAM and 4 CPU for the stats collector machine which we happen
 to run on Linux, but all software packages in this stack are
 cross-platform.
 
+## minimalist configs
+
+Optionally, see my related repo to review some minimalist configurations.
+These contain the least information required to run the various packages such as
+`InfluxDB`, `Grafana` and `Telegraf`.
+
+[https://github.com/mikenizo808/minimalist-oss-configurations](https://github.com/mikenizo808/minimalist-oss-configurations)
+
+
 ## Install `grafana`
 
 You can install grafana on many plaforms. This is the main page to get started.
@@ -47,7 +56,9 @@ You can install grafana on many plaforms. This is the main page to get started.
     sudo nano /etc/grafana/grafana.ini
 
     ## Or exclusive of the above, copy a file instead of editing
-    sudo cp ~/Downloads/minimalist-grafana.ini /etc/grafana/grafana.ini
+    ##
+    ## For a simple grafana config, you can use my related repo https://github.com/mikenizo808/minimalist-oss-configurations
+    sudo cp minimalist-grafana.ini /etc/grafana/grafana.ini
 
     ## Start the grafana service
     https://grafana.com/docs/grafana/latest/setup-grafana/start-restart-grafana/
