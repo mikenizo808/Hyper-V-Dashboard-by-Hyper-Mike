@@ -13,6 +13,19 @@ The data can be collected using `telegraf` by `InfluxData` and we can write to a
 datasource such as `InfluxDB`. The hyper-v dashboard works on all versions v1 to
 v3 of `InfluxDB`.
 
+## Credit
+
+The hyper-mike dashboard for hyper-v is inspired by but not based on the hyper-v dashboard written in 2018, by AllenGood.
+
+[https://grafana.com/grafana/dashboards/2618-hyper-v-metrics/](https://grafana.com/grafana/dashboards/2618-hyper-v-metrics/)
+
+We attempted to preserve the stats collection naming to include all of the above and more.
+
+The true prior art we borrow is the demonstration dashboard from `grafana labs`, dashboard ID `928`.
+That dashboard was edited to include the desired items and then exported for use in another instance.
+We then shared that `json` copy of the dashboard here.
+
+
 ## Plan
 
 First we install `grafana`, then `InfluxDB` and finally `telegraf`, though you could do them in any order.
