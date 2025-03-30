@@ -77,7 +77,7 @@ You can install grafana on many plaforms. This is the main page to get started.
     https://grafana.com/docs/grafana/latest/setup-grafana/start-restart-grafana/
 
 
-## Install `InfluxDB 3 Core (beta)
+## Install `InfluxDB 3 Core (beta)`
 
 For `Ubuntu 24.04` the only requirement before installing is `curl`, so `sudo apt install curl` and you are set.
 
