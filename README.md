@@ -11,7 +11,11 @@ An example Grafana Dashboard for Hyper-V. This requires that the open source tel
 This stats kit will use `Grafana` to display performance and other metrics for hyper-v.
 The data can be collected using `telegraf` by `InfluxData` and we can write to any
 datasource such as `InfluxDB`. The hyper-v dashboard works on all versions v1 to
-v3 of `InfluxDB`.
+v3 of `InfluxDB`.  All components are open source.
+
+## License
+
+MIT
 
 ## Credit
 
@@ -24,7 +28,6 @@ We attempted to preserve the stats collection naming to include all of the above
 The true prior art we borrow is the demonstration dashboard from `grafana labs`, dashboard ID `928`.
 That dashboard was edited to include the desired items and then exported for use in another instance.
 We then shared that `json` copy of the dashboard here.
-
 
 ## Plan
 
