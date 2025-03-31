@@ -589,7 +589,7 @@
       },
       "gridPos": {
         "h": 5,
-        "w": 2,
+        "w": 3,
         "x": 10,
         "y": 1
       },
@@ -692,7 +692,7 @@
       "gridPos": {
         "h": 5,
         "w": 3,
-        "x": 12,
+        "x": 13,
         "y": 1
       },
       "id": 62087,
@@ -876,7 +876,7 @@
       "gridPos": {
         "h": 5,
         "w": 4,
-        "x": 15,
+        "x": 16,
         "y": 1
       },
       "id": 62064,
@@ -1160,8 +1160,8 @@
       },
       "gridPos": {
         "h": 5,
-        "w": 3,
-        "x": 19,
+        "w": 4,
+        "x": 20,
         "y": 1
       },
       "id": 62065,
@@ -1608,7 +1608,7 @@
         "type": "influxdb",
         "uid": "${DS_INFLUXDB3BETA-INFLUXQL}"
       },
-      "description": "This is the total count of Hyper-V Virtual Machines on this host. This metric is gathered from the `Partitions` count on this host.",
+      "description": "This is the total count of Hyper-V Virtual Machines currently running on this host. This metric is gathered from the `Partitions` count on this host, which seems to include one additional count for the management (i.e. with two VMs running you may see a value of 3).",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1708,7 +1708,7 @@
           ]
         }
       ],
-      "title": "virtual machines",
+      "title": "running VMs",
       "type": "stat"
     },
     {
@@ -2113,7 +2113,7 @@
       },
       "gridPos": {
         "h": 5,
-        "w": 5,
+        "w": 7,
         "x": 17,
         "y": 7
       },
@@ -3106,7 +3106,7 @@
       },
       "gridPos": {
         "h": 4,
-        "w": 2,
+        "w": 4,
         "x": 16,
         "y": 13
       },
@@ -3276,7 +3276,7 @@
       "gridPos": {
         "h": 4,
         "w": 2,
-        "x": 18,
+        "x": 20,
         "y": 13
       },
       "id": 61863,
@@ -3396,7 +3396,7 @@
       "gridPos": {
         "h": 4,
         "w": 2,
-        "x": 20,
+        "x": 22,
         "y": 13
       },
       "id": 61866,
@@ -3549,7 +3549,7 @@
           },
           "gridPos": {
             "h": 7,
-            "w": 6,
+            "w": 8,
             "x": 0,
             "y": 18
           },
@@ -3746,7 +3746,7 @@
           "gridPos": {
             "h": 7,
             "w": 8,
-            "x": 6,
+            "x": 8,
             "y": 18
           },
           "id": 60200,
@@ -3956,7 +3956,7 @@
           "gridPos": {
             "h": 7,
             "w": 8,
-            "x": 14,
+            "x": 16,
             "y": 18
           },
           "id": 56720,
@@ -4169,7 +4169,7 @@
           },
           "gridPos": {
             "h": 10,
-            "w": 6,
+            "w": 8,
             "x": 0,
             "y": 26
           },
@@ -4406,7 +4406,7 @@
           "gridPos": {
             "h": 10,
             "w": 8,
-            "x": 6,
+            "x": 8,
             "y": 26
           },
           "id": 62069,
@@ -4593,7 +4593,7 @@
           "gridPos": {
             "h": 10,
             "w": 8,
-            "x": 14,
+            "x": 16,
             "y": 26
           },
           "id": 62067,
@@ -4849,7 +4849,7 @@
           },
           "gridPos": {
             "h": 7,
-            "w": 9,
+            "w": 10,
             "x": 3,
             "y": 37
           },
@@ -5035,8 +5035,8 @@
           },
           "gridPos": {
             "h": 7,
-            "w": 10,
-            "x": 12,
+            "w": 11,
+            "x": 13,
             "y": 37
           },
           "id": 62083,
@@ -5616,6 +5616,7 @@
             "type": "influxdb",
             "uid": "${DS_INFLUXDB3BETA-INFLUXQL}"
           },
+          "description": "This metrics delivery section reports the go stats for InfluxDB 1 and InfluxDB 2. Not available on InfluxDB 3 Core (beta), though you can see the /health API endpoint instead.",
           "fieldConfig": {
             "defaults": {
               "color": {
@@ -5760,6 +5761,7 @@
             "type": "influxdb",
             "uid": "${DS_INFLUXDB3BETA-INFLUXQL}"
           },
+          "description": "This metrics delivery section reports the go stats for InfluxDB 1 and InfluxDB 2. Not available on InfluxDB 3 Core (beta), though you can see the /health API endpoint instead.",
           "fieldConfig": {
             "defaults": {
               "color": {
@@ -5904,6 +5906,7 @@
             "type": "influxdb",
             "uid": "${DS_INFLUXDB3BETA-INFLUXQL}"
           },
+          "description": "This metrics delivery section reports the go stats for InfluxDB 1 and InfluxDB 2. Not available on InfluxDB 3 Core (beta), though you can see the /health API endpoint instead.",
           "fieldConfig": {
             "defaults": {
               "color": {
@@ -6051,6 +6054,7 @@
             "type": "influxdb",
             "uid": "${DS_INFLUXDB3BETA-INFLUXQL}"
           },
+          "description": "This metrics delivery section reports the go stats for InfluxDB 1 and InfluxDB 2. Not available on InfluxDB 3 Core (beta), though you can see the /health API endpoint instead.",
           "fieldConfig": {
             "defaults": {
               "color": {
@@ -6417,6 +6421,6 @@
   "timezone": "browser",
   "title": "Telegraf: system dashboard (Hyper-V)",
   "uid": "af479aec3c8c49",
-  "version": 13,
+  "version": 19,
   "weekStart": ""
 }
