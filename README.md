@@ -146,6 +146,10 @@ Login to grafana using a browser and click on `Connections` in the left panel.
 Then select `InfluxDB` for the datasource. Enter the relevant information and
 then click test datasource.
 
+> Note: If using `InfluxDB 3 Core (beta)` you will need to populate the `Custom http headers` section when adding your datasource. See the guide included with this repo called `How to add an InfluxDB 3 datasource in Grafana.md`. Spoiler, for the `Headers` text field, enter the word `Authorization`. For the `Value` text field, enter the word `Token` followed by some secret, such as `Token beta`.
+
+> Tip: For `InfluxDB 3 Core (beta)` the `Token` is not validated.
+
 ## Review your datasources
 
 After adding a datasource, you can go back and review it if desired.
