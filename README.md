@@ -13,6 +13,12 @@ The data can be collected using `telegraf` by `InfluxData` and we can write to a
 datasource such as `InfluxDB`. The hyper-v dashboard works on all versions v1 to
 v3 of `InfluxDB`.  All components are open source.
 
+## Changelog
+
+- 30March2025 - initial release
+- 31March2025 - Made the dashboard slightly wider to fit panels better.
+- 31March2025 - Renamed the panel "Virtual Machines" to "running VMs"
+
 ## License
 
 MIT
