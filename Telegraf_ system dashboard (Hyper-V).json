@@ -257,6 +257,7 @@
         "type": "influxdb",
         "uid": "${DS_INFLUXDB3BETA-INFLUXQL}"
       },
+      "description": "The number of healthy virtual machines in inventory. To see how many are running, see the \"running VMs\"metric.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -377,6 +378,7 @@
         "type": "influxdb",
         "uid": "${DS_INFLUXDB3BETA-INFLUXQL}"
       },
+      "description": "The number of virtual machine issues, if any. You should also review health inside the guest operating system, as this metric only evaluates virtual machine health from the hypervisor perspective.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -507,6 +509,7 @@
         "type": "influxdb",
         "uid": "${DS_INFLUXDB3BETA-INFLUXQL}"
       },
+      "description": "The health of NTP time synchronization. Note that the tolerance to time skew varies by workload and purpose. The numbers here are general. Adjust as needed.",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -1799,7 +1802,7 @@
               },
               {
                 "params": [],
-                "type": "sum"
+                "type": "mean"
               }
             ]
           ],
@@ -2682,7 +2685,7 @@
               },
               {
                 "params": [],
-                "type": "count"
+                "type": "mean"
               }
             ]
           ],
@@ -3535,8 +3538,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -3730,8 +3732,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -3927,8 +3928,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4155,8 +4155,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4171,7 +4170,7 @@
             "h": 10,
             "w": 8,
             "x": 0,
-            "y": 26
+            "y": 33
           },
           "id": 62068,
           "options": {
@@ -4390,8 +4389,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4407,7 +4405,7 @@
             "h": 10,
             "w": 8,
             "x": 8,
-            "y": 26
+            "y": 33
           },
           "id": 62069,
           "options": {
@@ -4577,8 +4575,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4594,7 +4591,7 @@
             "h": 10,
             "w": 8,
             "x": 16,
-            "y": 26
+            "y": 33
           },
           "id": 62067,
           "options": {
@@ -4697,8 +4694,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4714,7 +4710,7 @@
             "h": 7,
             "w": 3,
             "x": 0,
-            "y": 37
+            "y": 44
           },
           "id": 62075,
           "options": {
@@ -4834,8 +4830,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -4851,7 +4846,7 @@
             "h": 7,
             "w": 10,
             "x": 3,
-            "y": 37
+            "y": 44
           },
           "id": 62076,
           "options": {
@@ -5020,8 +5015,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -5037,7 +5031,7 @@
             "h": 7,
             "w": 11,
             "x": 13,
-            "y": 37
+            "y": 44
           },
           "id": 62083,
           "options": {
@@ -5220,8 +5214,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -5236,7 +5229,7 @@
             "h": 8,
             "w": 12,
             "x": 0,
-            "y": 45
+            "y": 52
           },
           "id": 62085,
           "options": {
@@ -5660,8 +5653,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -5677,7 +5669,7 @@
             "h": 7,
             "w": 6,
             "x": 0,
-            "y": 54
+            "y": 61
           },
           "id": 62001,
           "options": {
@@ -5805,8 +5797,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -5822,7 +5813,7 @@
             "h": 7,
             "w": 5,
             "x": 6,
-            "y": 54
+            "y": 61
           },
           "id": 62004,
           "options": {
@@ -5953,8 +5944,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -5970,7 +5960,7 @@
             "h": 7,
             "w": 6,
             "x": 11,
-            "y": 54
+            "y": 61
           },
           "id": 62003,
           "options": {
@@ -6098,8 +6088,7 @@
                 "mode": "absolute",
                 "steps": [
                   {
-                    "color": "green",
-                    "value": null
+                    "color": "green"
                   },
                   {
                     "color": "red",
@@ -6114,7 +6103,7 @@
             "h": 7,
             "w": 5,
             "x": 17,
-            "y": 54
+            "y": 61
           },
           "id": 62002,
           "options": {
@@ -6421,6 +6410,6 @@
   "timezone": "browser",
   "title": "Telegraf: system dashboard (Hyper-V)",
   "uid": "af479aec3c8c49",
-  "version": 19,
+  "version": 22,
   "weekStart": ""
 }
