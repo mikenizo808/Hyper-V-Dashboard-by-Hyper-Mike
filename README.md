@@ -18,6 +18,10 @@ v3 of `InfluxDB`.  All components are open source.
 - 30March2025 - initial release
 - 31March2025 - Made the dashboard slightly wider to fit panels better.
 - 31March2025 - Renamed the panel "Virtual Machines" to "running VMs"
+- 01April2025 - Changed some metrics from "latest" to "mean" so multi-day charts are accurate.
+- 01April2025 - Added informational text to more panel descriptions. These describe the purpose of the panel when hovering over the `i` in the title bar.
+
+> Note: Adding panel descriptions seems to give us less room for the actual title of each panel. If your screen is too small, you can edit and delete the descriptions, or press the appropriate button on your browser to resize your screen such as `CTRL+` or `CTRL-`. This kit works best on a big monitor, but remember you can always customize and put something important on its own line.
 
 ## License
 
@@ -97,7 +101,7 @@ You can install grafana on many plaforms. This is the main page to get started.
 
 For `Ubuntu 24.04` the only requirement before installing is `curl`, so simply `sudo apt install curl` and then follow the vendor instructions from the `InfluxData` team.
 
-    [https://docs.influxdata.com/influxdb3/core/install/](https://docs.influxdata.com/influxdb3/core/install/)
+[https://docs.influxdata.com/influxdb3/core/install/](https://docs.influxdata.com/influxdb3/core/install/)
 
 
 ## Download `telegraf`
