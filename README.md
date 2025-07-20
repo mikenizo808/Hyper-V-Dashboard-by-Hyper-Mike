@@ -103,6 +103,7 @@ For `Ubuntu 24.04` the only requirement before installing is `curl`, so simply `
 
 [https://docs.influxdata.com/influxdb3/core/install/](https://docs.influxdata.com/influxdb3/core/install/)
 
+> Note: There is a 3 day retention limit on stats when using the default `InfluxDB v3 Core` product, so some prefer `InfluxDB v2` for long term stats. Also notable is that the full Enterprise version of `InfluxDB v3 Core` is avaialble for home use upon request from the `InfluxData` team.
 
 ## Download `telegraf`
 
